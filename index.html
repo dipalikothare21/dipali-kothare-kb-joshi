@@ -1,0 +1,47 @@
+<html>
+<head>
+  <h3> Dynamic Image formatting</h3>
+</head>
+<style>
+button {
+  background-color:  #f44336; /* red */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+</style>
+
+<body>
+Image URL:<input id="url" type="text" placeholder ="url"/><br><br>
+Image Width:<input id="width" type="text" placeholder ="width pxl"/> <br><br>
+Image Height:<input id="height" type="text" placeholder ="height pxl"/><br><br>
+
+<bgcolor="red">
+<button id = "button">submit</button>
+</body>
+<script>
+var button = document.getElementById('button')
+
+button.addEventListener('click',function(event){
+
+var imageurl = document.getElementById('url').value
+
+var img = document.createElement('img')
+
+img.src = imageurl
+
+document.body.appendChild(img)
+var imageurl = document.getElementById('width').value
+
+var img = document.createElement('img')
+})
+
+</script>
+</html>
+
+
+
